@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,600&family=Ubuntu:wght@300;700&display=swap');
+
+body{
+    font-family: 'Playfair Display', sans-serif;
+    
+}
+
+.dashboard{
+    font-weight: 500;
+    font-size: 40px;
+    border-bottom: 2px solid;
+    margin-bottom: 1rem;
+
+}
+.slackImg{
+    width:520px;
+    border-radius: 60px 50px 50px 60px;
+   
+}
+.grid-container {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;  
+}
+
+.username{
+   display: block;
+    font-weight: lighter;
+    text-align: center;
+    grid-row: 2/2;
+}
+
+.footer{
+    border-top: 1px solid;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width:700px) {
+    body{
+        text-align: center;
+    }
+    .slackImg{
+        width: 350px;
+        height: 250px;
+    }
+    .grid-container{
+        display: inline-block;
+    }
+    .username{
+        font-size: 26px;
+    }
+    
+}
